@@ -1,0 +1,14 @@
+praca:
+
+<iframe id="video1"
+ width="560" height="315" src="https://www.youtube.com/embed/pSkXx5Hyp8k"
+ title="YouTube video player" frameborder="0"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+ </iframe>
+start:
+
+<iframe id="video1"
+ width="560" height="315" src="https://www.youtube.com/embed/pqfI0RIGXCw"
+ title="YouTube video player" frameborder="0"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+ </iframe>

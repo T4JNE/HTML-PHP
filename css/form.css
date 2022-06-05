@@ -1,0 +1,117 @@
+form{
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  margin: 15px;
+}
+
+form > label{
+  padding-top: 15px;
+  margin-left: 5%;
+  font-size: 18px;
+}
+
+form > input[type=number], select{
+  font-size: 20px;
+  padding: 12px;
+  margin-bottom: 0px;
+  border: none;
+  border-bottom: 2px solid #946E83;
+  text-align: center;
+  background-color: inherit;
+  transition: 0.5s;
+}
+
+form > input[type=number]:focus, select:focus{
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #DD8888;
+}
+
+.linear{
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.linear input[type=radio]{
+  display: none;
+}
+.linear input[type=radio]:hover + .radio{
+  border-bottom: 2px solid #DD8888;
+  font-weight: bold;
+}
+.linear input[type=radio]:checked + .radio{
+  background-color: #B4A6AB;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.linear > .radio{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  cursor: pointer;
+
+  border-bottom: 2px solid #946E83;
+
+  height: 75px;
+  width: 150px;
+
+  margin-top: 10px;
+}
+.linear > .radio > img{
+  height: 50px;
+  width: auto;
+}
+
+.ErrorDiv{
+  --border: 2px solid red;
+  padding-bottom: 4px;
+  border-radius: 15px;
+}
+.ErrorP{
+  display: flex;
+  color: red;
+  text-align: center;
+  margin: 0px;
+}
+
+form > input[type=button]{
+  align-self: center;
+
+  border-style: solid;
+  border-color: #946E83;
+  border-radius: 15px;
+  background-color: inherit;
+  color: #946E83;
+
+  padding: 5px 15px;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: 700;
+
+  margin-top: 25px;
+  margin-left: 1px;
+  margin-right: 1px;
+
+  transition: 0.2s;
+}
+
+form > input[type=button]:hover{
+  border-color: #DD8888;
+  color: #DD8888;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .linear > .radio{
+    --background-color: red;
+    font-size: 14px;
+    height: auto;
+    width: 33%;
+}

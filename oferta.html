@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/workpage.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/account.css">
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/form.js"></script>
+  <title>Bogusław Łęcina: Oferta</title>
+</head>
+<body>
+  <div id="header-background">
+    <header>
+      <button id="dropdownbtn" onclick="MenuClick()">=</button>
+      <a href="index.html">Start</a>
+      <a href="oferta.html" class="active">Oferta</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="praca.html">Praca</a>
+      <a onclick="AccountClick()">Konto</a>
+    </header>
+  </div>
+
+  <div id="account-div" class="account">
+  </div>
+
+  <div id="DropMenu" class="dropdown-content">
+    <a href="index.html">Start</a>
+    <a href="oferta.html" class="active">Oferta</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="praca.html">Praca</a>
+    <a onclick="AccountClick2()">Konto</a>
+  </div>
+
+  <div class="MainContent">
+    <div>
+      <h1>Kalkulator budowy domu</h1>
+      <p>
+        Wychodząc naprzeciw oczekiwaniom, przygotowaliśmy funkcjonalny
+        kalkulator budowy domu, który pomoże obliczyć koszty inwestycji.
+      </p>
+      <p>
+        <a href="view.php">Przeglądaj nasze oferty</a>
+      </p>
+    </div>
+
+    <div>
+      <form name="oferta-form" class="" action="oferta-dom.php" method="post">
+        <label>Powierzchnia domu [m<sup>2</sup>]</label>
+        <input type="number" name="farea" id="farea" value="" placeholder="Powierzchnia domu...">
+        <p class="ErrorP" id="fareaErr"></p>
+
+        <label>Województwo</label>
+        <select name="fstate" id="fstate">
+          <option value="dolnośląskie">Dolnośląskie</option>
+          <option value="kujawsko-pomorskie">Kujawsko-Pomorskie</option>
+          <option value="lubelskie">Lubelskie</option>
+          <option value="lubuskie">Lubuskie</option>
+          <option value="łódzkie">Łódzkie</option>
+          <option value="małopolskie">Małopolskie</option>
+          <option value="mazowieckie">Mazowieckie</option>
+          <option value="opolskie">Opolskie</option>
+          <option value="podkarpackie">Podkarpackie</option>
+          <option value="podlaskie">Podlaskie</option>
+          <option value="pomorskie">Pomorskie</option>
+          <option value="śląskie">Śląskie</option>
+          <option value="świętokrzyskie">Świętokrzyskie</option>
+          <option value="warmińsko-mazurskie">Warmińsko-Mazurskie</option>
+          <option value="wielkopolskie">Wielkopolskie</option>
+          <option value="zachodniopomorskie">Zachodniopomorskie</option>
+        </select>
+
+        <label>Rodzaj domu</label>
+        <div class="linear ErrorDiv" id="HouseTypeErrorDiv">
+          <input type="radio" name="fhousetype" value="Parterowy" id="fh1"/>
+          <label class="radio" for="fh1">
+              <img src="img/form/dom-parterowy.png" alt="parterowy">
+              Parterowy
+          </label>
+
+          <input type="radio" name="fhousetype" value="Z poddaszem" id="fh2"/>
+          <label class="radio" for="fh2">
+              <img src="img/form/dom-zpoddaszem.png" alt="Z poddaszem">
+              Z poddaszem
+          </label>
+
+          <input type="radio" name="fhousetype" value="Pietrowy" id="fh3"/>
+          <label class="radio" for="fh3">
+              <img src="img/form/dom-pietrowy.png" alt="pietrowy">
+              Piętrowy
+          </label>
+        </div>
+        <p class="ErrorP" id="HouseTypeErrorP"></p>
+
+        <label>Rodzaj dachu</label>
+        <div class="linear ErrorDiv" id="RoofTypeErrorDiv">
+          <input type="radio" name="frooftype" value="Plaski" id="r1"/>
+          <label class="radio" for="r1">
+              <img src="img/form/dach-plaski.png" alt="plaski">
+              Płaski
+          </label>
+
+          <input type="radio" name="frooftype" value="Dwuspadowy" id="r2"/>
+          <label class="radio" for="r2">
+            <img src="img/form/dach-spadzisty.png" alt="spadzisty">
+            Dwuspadowy
+          </label>
+
+          <input type="radio" name="frooftype" value="Wielospadowy" id="r3"/>
+          <label class="radio" for="r3">
+            <img src="img/form/dach-spadzisty.png" alt="spadzisty">
+            Wielospadowy
+          </label>
+        </div>
+        <p class="ErrorP" id="RoofTypeErrorP"></p>
+
+        <input type="button" onclick="FormValidation()" value="Dalej">
+      </form>
+    </div>
+  </div>
+
+  <script src="js/form.js"></script>
+
+  <div class="footer-spacer"></div>
+  <footer>
+    <img src="img/logo-small.png" alt="LOGO">
+    <div>
+      Zachęcamy do kontaktu!<br>
+      Tel: 120 000 255<br>
+      E-mail: boguslaw.lecina@remont.pl
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/startpage.css">
+  <link rel="stylesheet" href="css/account.css">
+  <script src="js/anim.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/background-color.js"></script>
+  <title>Bogusław Łęcina Usługi Budowlano-Remontowe</title>
+</head>
+<body>
+  <div id="header-background">
+    <header>
+      <button id="dropdownbtn" onclick="MenuClick()">=</button>
+      <a href="index.html" class="active">Start</a>
+      <a href="oferta.html">Oferta</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="praca.html">Praca</a>
+      <a onclick="AccountClick()">Konto</a>
+    </header>
+  </div>
+
+  <div id="DropMenu" class="dropdown-content">
+    <a href="index.html" class="active">Start</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="praca.html">Praca</a>
+    <a onclick="AccountClick2()">Konto</a>
+  </div>
+
+  <div id="account-div" class="account">
+  </div>
+
+  <div class="Mid">
+    <img id="logo" src="img/logo2.png" alt="LOGO HERE">
+    <p id="clock">00:00</p>
+  </div>
+
+  <script type="text/javascript">
+    function displayTime() {
+      let d = new Date();
+      let time = d.toLocaleTimeString();
+      document.getElementById("clock").innerText = time;
+      let t = setTimeout(function(){ displayTime() }, 1000);}
+    displayTime();
+  </script>
+
+
+  <div class="MainContent">
+    <h1>Dlaczego warto remontować u nas?</h1>
+    <div class="">
+       <video id="video1" width="560" height="315" src="videos/vid1.mp4" controls>
+          Twoja przeglądarka nie wspiera odtwarzania video.
+       </video>
+    </div>
+     <h1>Profesjonalna kadra, indywidualne podejście do klienta, materiały najwyższej jakości</h1>
+     <div>
+       Działamy od ponad 14 lat. Początki naszej działalności w branży budowlanej, to przede wszystkim usługi remontowe.
+       Do dziś remonty i usługi remontowe zajmują ważne miejsce w naszej ofercie. Wykonujemy zarówno drobne remonty, jak i remonty kapitalne.
+       Remontujemy mieszkania, domy, segmenty, a nierzadko również zajmujemy się wykończeniem lokali usługowych.
+       <br><br>
+       W miarę nabywania doświadczenia i kwalifikacji poszerzyliśmy naszą ofertę.
+       Uzupełniła ją budowa domów w różnym standardzie wykończenia – stan surowy, deweloperski oraz budowa domów pod klucz.
+       Początkowo usługi budowlane kierowaliśmy do inwestorów prywatnych – osób,
+       które marzyły o budowie własnego domu i poszukiwały rzetelnego wykonawcy.
+       Kolejnym krokiem było zaangażowanie umiejętności i wiedzy na rynku deweloperskim.
+       Dzięki temu obecnie, obok budowy domów zgodnie z projektem możemy zaproponować także sprzedaż gotowych domów w wybranym standardzie wykończenia.
+       <br><br>
+       Wyróżniamy się indywidualnym podejściem do klienta i zrozumieniem jego potrzeb.
+       Dysponujemy fachową wiedzą oraz sprawdzonymi ekipami wykonawczymi.
+       W naszych realizacjach stosujemy materiały najwyższej jakości,
+       dzięki czemu realizowane remonty oraz usługi budowlane pozostają na najwyższym poziomie,
+       a gotowe realizacje odznaczają się wysoką estetyką oraz komfortem użytkowania.
+       To wszystko sprawia, że jako firma budowlana jesteśmy szczególnie cenieni przez naszych Klientów.
+       <br><br>
+       Praca jest naszą pasją. Tworzymy prawdziwą, często długo wyczekiwana przestrzeń do codziennego życia.
+       Wiemy co dla rodziny znaczy dom i jak duża spoczywa na nas odpowiedzialność.
+       Dbamy więc o każdy szczegół i dokładamy wszelkich starań, aby efekty naszych prac były zgodne z oczekiwaniami klientów.
+       Budowa domów to obecnie jedna z naszych podstawowych usług, które świadczymy z zachowaniem najwyższych standardów branżowych.
+       Nasze usługi kierujemy zarówno do Klientów zainteresowanych realizacją projektu własnego, jak i osób zainteresowanych zakupem domu od dewelopera.
+       <br><br>
+       Klientów poszukujących rzetelnej i sprawdzonej firmy budowlanej zachęcamy do szczegółowego zapoznania się z naszą ofertą oraz dotychczasowymi realizacjami.
+        Świadczymy usługi budowlane, wykonujemy remonty,
+        oferujemy gotowe domy na sprzedaż – w razie pytań lub wątpliwości dotyczących zakresu realizowanych usług zachęcamy do kontaktu.
+     </div>
+  </div>
+
+  <div class="footer-spacer"></div>
+  <footer>
+    <img src="img/logo-small.png" alt="LOGO">
+    <div>
+      Zachęcamy do kontaktu! <br>
+      Tel: 120 000 255 <br>
+      E-mail: boguslaw.lecina@remont.pl
+    </div>
+  </footer>
+
+</body>
+</html>

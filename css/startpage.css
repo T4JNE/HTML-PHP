@@ -1,0 +1,67 @@
+.Mid{
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  min-height: 400px;
+  background-color: #CDD5D1;
+  --background: rgb(205,213,209);
+  --background: linear-gradient(45deg, rgba(205,213,209,1) 0%, rgba(221,248,232,1) 100%);
+  font-size: 42px;
+  padding-bottom: 5%;
+
+  border-bottom-style: solid;
+  border-color: #946E83;
+
+  transition: 4s;
+}
+#clock{
+  font-size: 48px;
+  font-style: oblique;
+  font-weight: 700;
+  color: #615055;
+  --background-color: red;
+  margin-top: 0px;
+
+  border-bottom: 2px solid #615055;
+
+  transform: translateY(-25px);
+}
+
+#logo{
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  --background-color: red;
+}
+
+h1{
+  text-align: center;
+  font-size: 38px;
+  font-family: Helvetica, sans-serif;
+  padding-top: 20px;
+}
+
+.MainContent{
+  text-align: center;
+  font-size: 18px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media screen and (max-width: 700px) {
+  .Mid{
+    --background-color: lightgray;
+    font-size: 24px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  .MainContent{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
